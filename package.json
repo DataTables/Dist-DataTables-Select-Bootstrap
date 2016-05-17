@@ -5,6 +5,7 @@
     "files": [
         "css/select.bootstrap.css"
     ],
+    "style": "css/select.bootstrap.css",
     "keywords": [
         "select",
         "selection",
