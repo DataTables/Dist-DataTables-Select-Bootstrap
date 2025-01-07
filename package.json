@@ -5,7 +5,7 @@
     "module": "js/select.bootstrap.mjs",
     "style": "css/select.bootstrap.css",
     "types": "./types/select.bootstrap.d.ts",
-    "version": "2.1.0",
+    "version": "3.0.0",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
@@ -23,7 +23,7 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-select": "2.1.0",
+        "datatables.net-select": "3.0.0",
         "datatables.net-bs": "^2",
         "jquery": ">=1.7"
     },
