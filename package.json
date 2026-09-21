@@ -1,16 +1,15 @@
 {
     "name": "datatables.net-select-bs",
     "description": "Select for DataTables with styling for [Bootstrap](https://getbootstrap.com/docs/3.3/)",
-    "main": "js/select.bootstrap.js",
-    "module": "js/select.bootstrap.mjs",
-    "style": "css/select.bootstrap.css",
+    "main": "./js/select.bootstrap.js",
+    "module": "./js/select.bootstrap.mjs",
+    "style": "./css/select.bootstrap.css",
     "types": "./types/select.bootstrap.d.ts",
     "version": "4.0.1",
     "files": [
-        "css/**/*.css",
-        "js/**/*.js",
-        "js/**/*.mjs",
-        "types/**/*.d.ts"
+        "js",
+        "css",
+        "types"
     ],
     "keywords": [
         "select",
@@ -35,5 +34,24 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/DataTables/Select.git"
-    }
+    },
+    "exports": {
+        ".": {
+            "types": "./types/select.bootstrap.d.ts",
+            "import": "./js/select.bootstrap.mjs",
+            "default": "./js/select.bootstrap.mjs",
+            "require": "./js/select.bootstrap.js"
+        },
+        "./js/*": "./js/*",
+        "./css": {
+            "types": "./types/css.d.ts",
+            "default": "./css/select.bootstrap.css"
+        },
+        "./css/*": {
+            "types": "./types/css.d.ts",
+            "default": "./css/*"
+        },
+        "./package.json": "./package.json"
+    },
+    "sideEffects": true
 }
