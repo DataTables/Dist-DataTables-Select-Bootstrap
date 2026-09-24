@@ -38,9 +38,10 @@
     "exports": {
         ".": {
             "types": "./types/select.bootstrap.d.ts",
+            "style": "./css/select.bootstrap.css",
             "import": "./js/select.bootstrap.mjs",
-            "default": "./js/select.bootstrap.mjs",
-            "require": "./js/select.bootstrap.js"
+            "require": "./js/select.bootstrap.js",
+            "default": "./js/select.bootstrap.mjs"
         },
         "./js/*": "./js/*",
         "./css": {
